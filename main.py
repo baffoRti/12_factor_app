@@ -2,9 +2,10 @@ from fastapi import FastAPI, status
 import redis
 import uvicorn
 
+from config import *
 
-conn = redis.Redis(host = '127.0.0.1', port = 6379, decode_responses = True)
 
+conn = redis.Redis(host=host, port=port, decode_responses=True)
 
 app = FastAPI()
 
