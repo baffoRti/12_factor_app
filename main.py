@@ -5,7 +5,7 @@ from dotenv import dotenv_values
 
 
 config = dotenv_values(".env")
-conn = redis.from_url(f'redis://{config["host"]}:{config["port"]}')
+conn = redis.from_url(f'redis://{config["host_redis"]}:{config["port_redis"]}')
 
 app = FastAPI()
 
