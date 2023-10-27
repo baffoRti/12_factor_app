@@ -25,5 +25,5 @@ def visit(id_par):
 
 
 if __name__ == "__main__":
-    uvicorn.run(app,host = config["host"], port = config['site_port'], 
+    uvicorn.run(app,host = config["host"], port = config['site_port'],
                 log_level = config['log_level'])
