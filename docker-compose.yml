@@ -2,15 +2,15 @@ version: "3.8"
 services:
   redis:
     image: redis
-    command: redis-server /home/alex/12_factor_app/redis.conf
+    command: redis-server /home/simpleuser/12_factor_app/redis.conf
     volumes:
-      - /home/alex/12_factor_app/redis.conf:/home/alex/12_factor_app/redis.conf
+      - /home/simpleuser/12_factor_app/redis.conf:/home/alex/12_factor_app/redis.conf
 
   app:
     build:
-      context: /home/alex/12_factor_app
+      context: /home/simpleuser/12_factor_app
     env_file:
-      - /home/alex/12_factor_app/.env
+      - /home/simpleuser/12_factor_app/.env
     restart: unless-stopped
     ports: 
-      - 8000:8000
+      - 10000:10000
