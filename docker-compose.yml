@@ -8,7 +8,7 @@ services:
 
   app:
     build:
-      context: /home/simpleuser/12_factor_app
+      context: /home/simpleuser/12_factor_app/
     env_file:
       - /home/simpleuser/12_factor_app/.env
     restart: unless-stopped
