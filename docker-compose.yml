@@ -13,4 +13,4 @@ services:
       - /home/simpleuser/12_factor_app/.env
     restart: unless-stopped
     ports: 
-      - 10000:10000
+      - 8000:8000
